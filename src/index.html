@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <div class="container">
+    <div>
+      <div class="header">
+        <div>Товары</div>
+        <div class="add">&#10010</div>
+      </div>
+    </div>
+      <table class="table">
+        <thead class="table-header">
+          <tr>
+            <th>Название</th>
+            <th>Стоимость</th>
+            <th colspan="2">Действия</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+        </tbody>
+      </table>
+      <form class="form hidden">
+        <div class="form-control">
+         <div><label for="name">Название</label></div>
+          <input name="name" id="name" class="input" type="text" required>
+      </div>
+      <div class="form-control">
+        <div><label for="price">Стоимость</label></div>
+        <input name="price" id="price" class="input" type="text" required>
+    </div>
+    <div class="form-footer">
+      <button type="submit" class="btn confirm text-form">Сохранить</button>
+      <button type="reset" class="btn cancel text-form">Отмена</button>
+  </div>
+      </form>
+    </div>
+  </body>
+</html>
